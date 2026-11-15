@@ -11,7 +11,7 @@ export const FREE_SHIPPING_OVER = 3000
 // image = slot path. Drop the file into public/images with the same name.
 const P = (id, gender, name, base, extra = {}) => ({
   id, gender, type: 'Hoodie', name, base,
-  image: `/images/${id}.jpg`,
+  image: `${import.meta.env.BASE_URL}images/${id}.jpg`,
   isNew: false,
   sale: true,
   ...extra,
